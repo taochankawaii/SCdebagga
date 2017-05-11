@@ -29,14 +29,14 @@ public class Sc {
 	public void capi() {
 	SnakeCamelUtil scu = new SnakeCamelUtil();
 	String i = "Tao";
-	String j = scu.capitalize("Tao");
+	String j = scu.capitalize("tao");
 	assertThat(j,is(i));
 	}
 	@Test
 	public void uncapi() {
 	SnakeCamelUtil scu = new SnakeCamelUtil();
-	String i = "Tao";
-	String j = scu.capitalize("Tao");
+	String i = "tao";
+	String j = scu.uncapitalize("Tao");
 	assertThat(j,is(i));
 	}
 }
